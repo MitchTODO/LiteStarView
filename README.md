@@ -1,3 +1,3 @@
 # LiteStarView
 
-# Check back in within the next few hours 
+# Check back within the next few hours
