@@ -5,6 +5,7 @@
 A light weight ⭐️ star rating UI component for iOS written in Swift.
 
 ![alt text](ReadmePic/starShot.png "User Interaction Enabled")
+![alt text](ReadmePic/blueStar.png "User Interaction Enabled")
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
@@ -84,9 +85,9 @@ The design is minimalist, with a few customizations.
 - `starCount` :`Int`              : Number of stars in view  
 - `ratingCount`:`Int`           : Amount of ratings for item
 - `rating`: `CGFloat`            : Rating for item
-- `roundRating`:`Bool`         : Keeps rating in whole numbers
+- `roundRating`:`Bool`         : Will use whole numbers
 - `fillColor` :`UIColor`      : Star fill color
-- `stokeColor` :`UIColor`    : Star outline (strokeColor) color 
+- `stokeColor` :`UIColor`    : Star outline color 
 
 
 # 🎲 Behavior
