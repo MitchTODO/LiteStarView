@@ -29,10 +29,6 @@ Currently not on CocoaPods
 <img src="ReadmePic/className.png" height="150" alt="class"/>
 
 2. Set your constraints
-- Top
-- Trailing
-- Leading 
-- Height
 
 <img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
@@ -80,8 +76,5 @@ The design is minimalist, with a few customizations.
 
 Stars are automaticity update when when the `rating` or `ratingCount` changes. 
 Also calling `starView.updateStar()` will force a update. So make your changes before calling!
-
-
-### Calculating user set star rating by width and pan gesture
 
 
