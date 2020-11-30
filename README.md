@@ -2,13 +2,13 @@
 
 ## Desciption
 
-A light weight star ⭐️ rating UI component for iOS written in Swift.
+A light weight ⭐️ star rating UI component for iOS written in Swift.
 
 ![alt text](ReadmePic/starShot.png "User Interaction Enabled")
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
-## Installation 
+## 🏗 Installation 
 
 ### Manually 
 
@@ -22,7 +22,7 @@ You can download or copy the following files.
 
 Currently not on CocoaPods 
 
-## Setup
+## 📋 Setup
 
 1. Create and drop a UIView then set the class to StarView.
 
@@ -35,16 +35,13 @@ There are many way to layout this view but a height constraint is needed for the
  This is the formula to help calculate the width.
 `(height * amountOfStars) + (height * 2)`
 
- **Examples**
- 
+ **Example**
 <img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
 <img src="ReadmePic/alignLeft.png" height="50" alt="constraints"/>
 
----
 
 **Note:** *Also need to set Center Horizontal in Safe Area to the parent.*
-
 **Formula Example:**  `(40 * 5) + (40 * 2) = 280`
 
 <img src="ReadmePic/alignCenter.png" height="250" alt="constraints"/>
@@ -66,7 +63,7 @@ There are many way to layout this view but a height constraint is needed for the
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
-## Design
+## 📐 Design
 
 The design is minimalist, with a few customizations. 
 
@@ -89,13 +86,12 @@ The design is minimalist, with a few customizations.
 - `stokeColor` :`UIColor`    : Star outline (strokeColor) color 
 
 
-## Behavior
+## 🎲 Behavior
 
 ### Updating the view
 
 Stars are automaticity update when when the `rating` or `ratingCount` changes. 
 Also calling `starView.updateStar()` will force a update. So make your changes before calling!
 
-## 
 
 
