@@ -1,18 +1,18 @@
 # ⭐️ LiteStarView
 
-![alt text](ReadmePic/starShot.png "User Interaction Enabled")
-![alt text](ReadmePic/starFloat.gif "Float")
-![alt text](ReadmePic/starInt.gif "Int")
-
 ## Desciption
 
 A light weight star ⭐️ rating UI component for iOS written in Swift.
+
+![alt text](ReadmePic/starShot.png "User Interaction Enabled")
+![alt text](ReadmePic/starFloat.gif "Float")
+![alt text](ReadmePic/starInt.gif "Int")
 
 ## Installation 
 
 ### Manually 
 
-You can download or copy the following files 
+You can download or copy the following files. 
 
 - StarView.swift
 - StarGestures.swift
@@ -30,17 +30,33 @@ Currently not on CocoaPods
 
 2. Set your constraints
 
+There are many way to layout this view but a height constraint is needed for the stars to be drawn correctly. Take a look at the examples below
+
+ This is the formula to help calculate the width.
+`(height * amountOfStars) + (height * 2)`
+
+ **Example**
 <img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
-The view can be set up in one of two ways.
+<img src="ReadmePic/alignLeft.png" height="50" alt="constraints"/>
 
-- Show Rating (Non-interactive)
+
+**Note:** *Also need to set Center Horizontal in Safe Area to the parent.*
+**Formula Example:**  `(40 * 5) + (40 * 2) = 280`
+
+<img src="ReadmePic/alignCenter.png" height="250" alt="constraints"/>
+
+<img src="ReadmePic/starDemoCenter.png" height="50" alt="constraints"/>
+
+3. The view can be set up in one of two ways.
+
+**- Show rating (Non-interactive)**
 
 <img src="ReadmePic/userDisabled.png" height="50" alt="class"/>
 
 ![alt text](ReadmePic/starShot.png "User Interaction Enabled")
 
-- User provide rating (interactive)
+**- User provided rating (interactive)**
 
 <img src="ReadmePic/userEnabled.png" height="50" alt="class"/>
 
@@ -76,5 +92,7 @@ The design is minimalist, with a few customizations.
 
 Stars are automaticity update when when the `rating` or `ratingCount` changes. 
 Also calling `starView.updateStar()` will force a update. So make your changes before calling!
+
+## 
 
 
