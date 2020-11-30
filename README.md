@@ -26,7 +26,7 @@ Currently not on CocoaPods
 
 1. Create and drop a UIView then set the class to StarView.
 
-<img src="ReadmePic/className.png" height="150" alt="class">
+<img src="ReadmePic/className.png" height="150" alt="class"/>
 
 2. Set your constraints
 - Top
@@ -34,16 +34,20 @@ Currently not on CocoaPods
 - Leading 
 - Height
 
-<img src="ReadmePic/constraints.png" height="250" alt="constraints">
+<img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
 The view can be set up in one of two ways.
 
 - Show Rating (Non-interactive)
-<img src="ReadmePic/userDisabled.png" height="50" alt="class">
+
+<img src="ReadmePic/userDisabled.png" height="50" alt="class"/>
+
 ![alt text](ReadmePic/starShot.png "User Interaction Enabled")
 
 - User provide rating (interactive)
-<img src="ReadmePic/userEnabled.png" height="50" alt="class">
+
+<img src="ReadmePic/userEnabled.png" height="50" alt="class"/>
+
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
