@@ -1,5 +1,9 @@
 # ⭐️ LiteStarView
 
+![alt text](ReadmePic/starShot.png "User Interaction Enabled")
+![alt text](ReadmePic/starFloat.gif "Float")
+![alt text](ReadmePic/starInt.gif "Int")
+
 ## Desciption
 
 A light weight star ⭐️ rating UI component for iOS written in Swift.
@@ -35,11 +39,11 @@ Currently not on CocoaPods
 The view can be set up in one of two ways.
 
 - Show Rating (Non-interactive)
-![alt text](ReadmePic/userDisabled.png "User Interaction Disabled")
+<img src="ReadmePic/userDisabled.png" height="50" alt="class">
 ![alt text](ReadmePic/starShot.png "User Interaction Enabled")
 
 - User provide rating (interactive)
-![alt text](ReadmePic/userEnabled.png "User Interaction Enabled")
+<img src="ReadmePic/userEnabled.png" height="50" alt="class">
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
