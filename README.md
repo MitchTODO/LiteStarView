@@ -41,7 +41,7 @@ The view can be set up in one of two ways.
 
 - User provide rating (interactive)
 ![alt text](ReadmePic/userDisabled.png "User Interaction Disabled")
-![alt text](ReadmePic/screenShot.png "User Interaction Enabled")
+![alt text](ReadmePic/starShot.png "User Interaction Enabled")
 
 ## Design
 
