@@ -36,12 +36,14 @@ There are many way to layout this view but a height constraint is needed for the
 `(height * amountOfStars) + (height * 2)`
 
  **Example**
+ 
 <img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
 <img src="ReadmePic/alignLeft.png" height="50" alt="constraints"/>
 
 
 **Note:** *Also need to set Center Horizontal in Safe Area to the parent.*
+
 **Formula Example:**  `(40 * 5) + (40 * 2) = 280`
 
 <img src="ReadmePic/alignCenter.png" height="250" alt="constraints"/>
