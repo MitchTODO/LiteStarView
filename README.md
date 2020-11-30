@@ -5,7 +5,6 @@
 A light weight ⭐️ star rating UI component for iOS written in Swift.
 
 ![alt text](ReadmePic/starShot.png "User Interaction Enabled")
-![alt text](ReadmePic/blueStar.png "User Interaction Enabled")
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
@@ -42,7 +41,7 @@ There are many way to layout this view but a height constraint is needed for the
 
 <img src="ReadmePic/alignLeft.png" height="70" alt="constraints"/>
 
-
+---
 
 <img src="ReadmePic/alignCenter.png" height="250" alt="constraints"/>
 
