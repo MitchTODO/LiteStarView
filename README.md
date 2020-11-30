@@ -35,13 +35,13 @@ Currently not on CocoaPods
 The view can be set up in one of two ways.
 
 - Show Rating (Non-interactive)
+![alt text](ReadmePic/userDisabled.png "User Interaction Disabled")
+![alt text](ReadmePic/starShot.png "User Interaction Enabled")
+
+- User provide rating (interactive)
 ![alt text](ReadmePic/userEnabled.png "User Interaction Enabled")
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
-
-- User provide rating (interactive)
-![alt text](ReadmePic/userDisabled.png "User Interaction Disabled")
-![alt text](ReadmePic/starShot.png "User Interaction Enabled")
 
 ## Design
 
