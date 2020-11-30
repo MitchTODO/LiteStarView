@@ -39,7 +39,7 @@ There are many way to layout this view but a height constraint is needed for the
  
 <img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
-<img src="ReadmePic/alignLeft.png" height="50" alt="constraints"/>
+<img src="ReadmePic/alignLeft.png" height="70" alt="constraints"/>
 
 
 
@@ -49,7 +49,7 @@ There are many way to layout this view but a height constraint is needed for the
 
 **Formula Example:**  `(40 * 5) + (40 * 2) = 280`
 
-<img src="ReadmePic/starDemoCenter.png" height="100" alt="constraints"/>
+<img src="ReadmePic/starDemoCenter.png" height="70" alt="constraints"/>
 
 ### 3. The view can be set up in one of two ways.
 
