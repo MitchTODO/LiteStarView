@@ -8,7 +8,7 @@ A light weight ⭐️ star rating UI component for iOS written in Swift.
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
-## 🏗 Installation 
+# 🏗 Installation 
 
 ### Manually 
 
@@ -22,7 +22,7 @@ You can download or copy the following files.
 
 Currently not on CocoaPods 
 
-## 📋 Setup
+# 📋 Setup
 
 1. Create and drop a UIView then set the class to StarView.
 
@@ -63,7 +63,7 @@ There are many way to layout this view but a height constraint is needed for the
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
-## 📐 Design
+# 📐 Design
 
 The design is minimalist, with a few customizations. 
 
@@ -86,7 +86,7 @@ The design is minimalist, with a few customizations.
 - `stokeColor` :`UIColor`    : Star outline (strokeColor) color 
 
 
-## 🎲 Behavior
+# 🎲 Behavior
 
 ### Updating the view
 
