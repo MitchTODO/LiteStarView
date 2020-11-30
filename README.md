@@ -24,33 +24,34 @@ Currently not on CocoaPods
 
 # 📋 Setup
 
-1. Create and drop a UIView then set the class to StarView.
+### 1. Create and drop a UIView then set the class to StarView.
 
 <img src="ReadmePic/className.png" height="150" alt="class"/>
 
-2. Set your constraints
+### 2. Set your constraints
 
 There are many way to layout this view but a height constraint is needed for the stars to be drawn correctly. Take a look at the examples below
 
  This is the formula to help calculate the width.
 `(height * amountOfStars) + (height * 2)`
 
- **Example**
+ **Examples**
  
 <img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
 <img src="ReadmePic/alignLeft.png" height="50" alt="constraints"/>
 
 
+
+<img src="ReadmePic/alignCenter.png" height="250" alt="constraints"/>
+
 **Note:** *Also need to set Center Horizontal in Safe Area to the parent.*
 
 **Formula Example:**  `(40 * 5) + (40 * 2) = 280`
 
-<img src="ReadmePic/alignCenter.png" height="250" alt="constraints"/>
+<img src="ReadmePic/starDemoCenter.png" height="100" alt="constraints"/>
 
-<img src="ReadmePic/starDemoCenter.png" height="50" alt="constraints"/>
-
-3. The view can be set up in one of two ways.
+### 3. The view can be set up in one of two ways.
 
 **- Show rating (Non-interactive)**
 
