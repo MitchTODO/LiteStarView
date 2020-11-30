@@ -22,7 +22,7 @@ Currently not on CocoaPods
 
 1. Create and drop a UIView then set the class to StarView.
 
-![alt text](ReadmePic/className.png "Title")
+<img src="ReadmePic/className.png" height="250" alt="class">
 
 2. Set your constraints
 - Top
@@ -30,7 +30,7 @@ Currently not on CocoaPods
 - Leading 
 - Height
 
-![alt text](ReadmePic/constraints.png "Constraints")
+<img src="ReadmePic/constraints.png" height="250" alt="constraints">
 
 The view can be set up in one of two ways.
 
