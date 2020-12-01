@@ -143,7 +143,7 @@ public class StarView:UIView, UIGestureRecognizerDelegate {
         
         // Create a label for ratingCounter or rating
         subCounter = UILabel(frame: CGRect(x: dynamicWidth - (bounds.height / 2), y: bounds.minY, width: bounds.height * 2, height: bounds.height))
-        subCounter!.text = "(\(ratingCount))"
+        subCounter!.text = "\(ratingCount)"
         if isUserInteractionEnabled && !roundRating {
             subCounter!.text = "\(Float(ratingCount))"
         }
