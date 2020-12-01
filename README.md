@@ -1,8 +1,18 @@
+[![Platforms](https://img.shields.io/badge/platform-iOS-yellow.svg)]()
+[![Language](https://img.shields.io/badge/language-Swift_5.0-orange.svg)]()
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)]()
+
 # ⭐️ LiteStarView
 
-## Desciption
+## About 
 
-A light weight ⭐️ star rating UI component for iOS written in Swift.
+Leave a ⭐ if you like this project or want to see updates in future.
+
+The view was made for a recipie app. I needed a simple ratings view that was also setable by the user and could work in a collection view.
+
+## 📑Desciption
+
+A light weight star rating UI component for iOS written in Swift. 
 
 ![alt text](ReadmePic/starShot.png "User Interaction Enabled")
 ![alt text](ReadmePic/starFloat.gif "Float")
@@ -12,11 +22,11 @@ A light weight ⭐️ star rating UI component for iOS written in Swift.
 
 ### Manually 
 
-You can download or copy the following files. 
+Git clone the repo and add LiteStarView framework to your exsiting xcode project. 
 
-- StarView.swift
-- StarGestures.swift
-- StarBezier.swift
+**Note:** *You might need build the framework.*
+
+[How to add LiteStarView framework to a existing project. ](https://youtu.be/xE_Q32SOAfo "Video demo of add framework ")
 
 ### CocoaPods
 
@@ -26,22 +36,26 @@ Currently not on CocoaPods
 
 ### 1. Create and drop a UIView then set the class to StarView.
 
-<img src="ReadmePic/className.png" height="150" alt="class"/>
+<img src="ReadmePic/setClass.png" height="150" alt="class"/>
 
 ### 2. Set your constraints
 
 There are many way to layout this view but a height constraint is needed for the stars to be drawn correctly. Take a look at the examples below
 
  This is the formula to help calculate the width.
+ 
 `(height * amountOfStars) + (height * 2)`
 
  **Examples**
  
+ <img src="ReadmePic/alignLeft.png" height="70" alt="constraints"/>
+ 
 <img src="ReadmePic/constraints.png" height="250" alt="constraints"/>
 
-<img src="ReadmePic/alignLeft.png" height="70" alt="constraints"/>
 
 ---
+
+<img src="ReadmePic/starDemoCenter.png" height="70" alt="constraints"/>
 
 <img src="ReadmePic/alignCenter.png" height="250" alt="constraints"/>
 
@@ -49,7 +63,6 @@ There are many way to layout this view but a height constraint is needed for the
 
 **Formula Example:**  `(40 * 5) + (40 * 2) = 280`
 
-<img src="ReadmePic/starDemoCenter.png" height="70" alt="constraints"/>
 
 ### 3. The view can be set up in one of two ways.
 
@@ -66,9 +79,36 @@ There are many way to layout this view but a height constraint is needed for the
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
+### 4. Using StarView
+
+Link starView like anyother to your viewController.
+
+
+```swift
+
+import UIKit
+import LiteStarView
+class ViewController: UIViewController {
+
+    @IBOutlet weak var starView: StarView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // set rating and ratingCount programmable
+        starView.rating = 3.5
+        starView.ratingCount = 50
+        // get current rating
+        let currentRating = starView.rating
+    }
+}
+
+```
+
+
+
 # 📐 Design
 
-The design is minimalist, with a few customizations. 
+StarView is a minimalist design, with a few customizations. 
 
 **Note**: *This view is not currently IBDesignable*
 
@@ -81,12 +121,14 @@ The design is minimalist, with a few customizations.
 
 ### Modifiers / Customization
 
-- `starCount` :`Int`              : Number of stars in view  
-- `ratingCount`:`Int`           : Amount of ratings for item
-- `rating`: `CGFloat`            : Rating for item
-- `roundRating`:`Bool`         : Will use whole numbers
-- `fillColor` :`UIColor`      : Star fill color
-- `stokeColor` :`UIColor`    : Star outline color 
+Variables you can modifiy in the view inspectinable 
+
+- `starCount:Int = 5`                                                 : Number of stars in view  
+- `ratingCount:Int = 0`                                             : Amount of ratings for item
+- `rating:CGFloat = 0.0`                                           : Rating for item
+- `roundRating:Bool = false`                                   : Will use whole numbers in rating
+- `fillColor:UIColor = UIColor.systemYellow`  : Star fill color
+- `stokeColor` :`UIColor = UIColor.black`             : Star outline (strokeColor) color 
 
 
 # 🎲 Behavior
@@ -95,6 +137,24 @@ The design is minimalist, with a few customizations.
 
 Stars are automaticity update when when the `rating` or `ratingCount` changes. 
 Also calling `starView.updateStar()` will force a update. So make your changes before calling!
+
+
+### Numbers at the end
+
+There is a UILabel subview (`subCounter`) at the end of the starView. This label provides a way to show one of two things. 
+
+If [Non-interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3") this label will display the amount of ratings  `ratingCounter` 
+
+If [Interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3")  this label will display the latest rating the user provided.
+
+Width of the label is height * two.
+
+If you prefer to have it closer to the stars your could modifiy the following line or set `.textAlignment = left`.
+
+StarView.swift  Line 145
+
+```subCounter = UILabel(frame: CGRect(x: dynamicWidth - (bounds.height / 2), y: bounds.minY, width: bounds.height * 2, height: bounds.height))```
+
 
 
 
