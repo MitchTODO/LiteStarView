@@ -18,6 +18,56 @@ A light weight star rating UI component for iOS written in Swift.
 ![alt text](ReadmePic/starFloat.gif "Float")
 ![alt text](ReadmePic/starInt.gif "Int")
 
+# 📐 Design
+
+StarView is a minimalist design, with a few customizations. 
+
+**Note**: *This view is not currently IBDesignable*
+
+### Features 
+
+- Can be used to show ratings followed by number of ratings.
+- If `isUserInteractionEnabled` user can provied a rating by panning or tapping on stars, rating will be shown.
+- Gives haptic Feedback when user selects/deselect one full star
+- Round stars to the nears whole 
+
+### Modifiers / Customization
+
+Variables you can modifiy in the view inspectinable 
+
+- `starCount:Int = 5`                                                 : Number of stars in view  
+- `ratingCount:Int = 0`                                             : Amount of ratings for item
+- `rating:CGFloat = 0.0`                                           : Rating for item
+- `roundRating:Bool = false`                                   : Will use whole numbers in rating
+- `fillColor:UIColor = UIColor.systemYellow`  : Star fill color
+- `stokeColor` :`UIColor = UIColor.black`             : Star outline (strokeColor) color 
+
+
+# 🎲 Behavior
+
+### Updating the view
+
+Stars are automaticity update when when the `rating` or `ratingCount` changes. 
+Also calling `starView.updateStar()` will force a update. So make your changes before calling!
+
+
+### Numbers at the end
+
+There is a UILabel subview (`subCounter`) at the end of the starView. This label provides a way to show one of two things. 
+
+If [Non-interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3") this label will display the amount of ratings  `ratingCounter` 
+
+If [Interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3")  this label will display the latest rating the user provided.
+
+Width of the label is height * two.
+
+If you prefer to have it closer to the stars your could modifiy the following line or set `.textAlignment = left`.
+
+*StarView.swift  Line 145*
+
+```subCounter = UILabel(frame: CGRect(x: dynamicWidth - (bounds.height / 2), y: bounds.minY, width: bounds.height * 2, height: bounds.height))```
+
+
 # 🏗 Installation 
 
 ### Manually 
@@ -103,58 +153,6 @@ class ViewController: UIViewController {
 }
 
 ```
-
-
-
-# 📐 Design
-
-StarView is a minimalist design, with a few customizations. 
-
-**Note**: *This view is not currently IBDesignable*
-
-### Features 
-
-- Can be used to show ratings followed by number of ratings.
-- If `isUserInteractionEnabled` user can provied a rating by panning or tapping on stars, rating will be shown.
-- Gives haptic Feedback when user selects/deselect one full star
-- Round stars to the nears whole 
-
-### Modifiers / Customization
-
-Variables you can modifiy in the view inspectinable 
-
-- `starCount:Int = 5`                                                 : Number of stars in view  
-- `ratingCount:Int = 0`                                             : Amount of ratings for item
-- `rating:CGFloat = 0.0`                                           : Rating for item
-- `roundRating:Bool = false`                                   : Will use whole numbers in rating
-- `fillColor:UIColor = UIColor.systemYellow`  : Star fill color
-- `stokeColor` :`UIColor = UIColor.black`             : Star outline (strokeColor) color 
-
-
-# 🎲 Behavior
-
-### Updating the view
-
-Stars are automaticity update when when the `rating` or `ratingCount` changes. 
-Also calling `starView.updateStar()` will force a update. So make your changes before calling!
-
-
-### Numbers at the end
-
-There is a UILabel subview (`subCounter`) at the end of the starView. This label provides a way to show one of two things. 
-
-If [Non-interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3") this label will display the amount of ratings  `ratingCounter` 
-
-If [Interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3")  this label will display the latest rating the user provided.
-
-Width of the label is height * two.
-
-If you prefer to have it closer to the stars your could modifiy the following line or set `.textAlignment = left`.
-
-*StarView.swift  Line 145*
-
-```subCounter = UILabel(frame: CGRect(x: dynamicWidth - (bounds.height / 2), y: bounds.minY, width: bounds.height * 2, height: bounds.height))```
-
 
 
 
