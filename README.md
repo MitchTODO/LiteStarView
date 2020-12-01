@@ -65,10 +65,10 @@ If you prefer to have it closer to the stars your could modifiy the following li
 
 *StarView.swift  Line 145*
 
-'''swift
+```swift
 subCounter = UILabel(frame: CGRect(x: dynamicWidth - (bounds.height / 2), y: bounds.minY, width: bounds.height * 2, height: bounds.height))
 
-'''
+```
 
 
 # 🏗 Installation 
