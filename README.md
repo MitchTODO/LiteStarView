@@ -84,7 +84,9 @@ Currently not on CocoaPods
 
 # 📋 Setup
 
-### 1. Create and drop a UIView then set the class to StarView.
+### 1. Create StarView
+
+Create and drop a UIView then set the class to StarView.
 
 <img src="ReadmePic/setClass.png" height="90" alt="class"/>
 
