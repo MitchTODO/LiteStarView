@@ -33,8 +33,8 @@ StarView is a minimalist design, with a few customizations.
 
 ### Modifiers / Customization
 
-Variables you can modifiy in the view inspectinable 
-                   default value
+Variables you can modifiy in the view inspectinable with type and default value. 
+                   
 - `starCount:Int = 5`                                                 : Number of stars in view  
 - `ratingCount:Int = 0`                                             : Amount of ratings for item
 - `rating:CGFloat = 0.0`                                           : Rating for item
