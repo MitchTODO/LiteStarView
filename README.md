@@ -51,26 +51,6 @@ Stars are automaticity update when when the `rating` or `ratingCount` changes.
 Also calling `starView.updateStar()` will force a update. So make your changes before calling!
 
 
-### Numbers at the end 
-
-There is a UILabel subview (`subCounter`) at the end of the starView. This label provides a way to show one of two things. 
-
-If [Non-interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3") this label will display the amount of ratings  `ratingCounter` 
-
-If [Interactive ](https://github.com/MitchTODO/LiteStarView#3-the-view-can-be-set-up-in-one-of-two-ways " Link to setup #3")  this label will display the latest rating the user provided.
-
-Width of the label is height * two.
-
-If you prefer to have it closer to the stars your could modifiy the following line or set `.textAlignment = left`.
-
-*StarView.swift  Line 145*
-
-```swift
-subCounter = UILabel(frame: CGRect(x: dynamicWidth - (bounds.height / 2), y: bounds.minY, width: bounds.height * 2, height: bounds.height))
-
-```
-
-
 # 🏗 Installation 
 
 ### Manually 
