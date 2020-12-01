@@ -51,7 +51,7 @@ Stars are automaticity update when when the `rating` or `ratingCount` changes.
 Also calling `starView.updateStar()` will force a update. So make your changes before calling!
 
 
-### Numbers at the end
+### Numbers at the end 
 
 There is a UILabel subview (`subCounter`) at the end of the starView. This label provides a way to show one of two things. 
 
@@ -131,7 +131,7 @@ There are many way to layout this view but a height constraint is needed for the
 
 ### 4. Using StarView
 
-Link starView like anyother to your viewController.
+Once linked to your viewController. You can programmatically set/get rating and rating counter. 
 
 
 ```swift
