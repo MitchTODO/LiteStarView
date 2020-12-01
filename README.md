@@ -10,7 +10,7 @@ Leave a ⭐ if you like this project or want to see updates in future.
 
 The view was made for a recipie app. I needed a simple ratings view that was also setable by the user and would work in a collection view.
 
-## 📑Desciption
+## 📑 Description
 
 A light weight star rating UI component for iOS written in Swift. 
 
