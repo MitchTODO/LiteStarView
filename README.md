@@ -151,7 +151,7 @@ Width of the label is height * two.
 
 If you prefer to have it closer to the stars your could modifiy the following line or set `.textAlignment = left`.
 
-StarView.swift  Line 145
+*StarView.swift  Line 145*
 
 ```subCounter = UILabel(frame: CGRect(x: dynamicWidth - (bounds.height / 2), y: bounds.minY, width: bounds.height * 2, height: bounds.height))```
 
