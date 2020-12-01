@@ -18,7 +18,7 @@ public class StarView:UIView, UIGestureRecognizerDelegate {
             if clipStarView != nil {
                 // Only need to update the label
                 subCounter!.text = "(\(ratingCount))"
-                updateStar() // is this needed?
+                updateStar()
             }
         }
     }
