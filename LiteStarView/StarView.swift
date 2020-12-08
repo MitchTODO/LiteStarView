@@ -17,7 +17,7 @@ public class StarView:UIView, UIGestureRecognizerDelegate {
         didSet {
             if clipStarView != nil {
                 // Only need to update the label
-                subCounter!.text = "(\(ratingCount))"
+                subCounter!.text = "\(ratingCount)"
                 updateStar()
             }
         }
@@ -149,7 +149,7 @@ public class StarView:UIView, UIGestureRecognizerDelegate {
         }
         subCounter!.textColor = strokeColor
         subCounter!.textAlignment = .center
-        //subCounter!.font = subCounter!.font.withSize(14)
+        subCounter!.font = subCounter!.font.withSize(12)
         subCounter!.adjustsFontSizeToFitWidth = true
         subCounter!.adjustsFontForContentSizeCategory = true
         subCounter!.baselineAdjustment = .alignCenters
