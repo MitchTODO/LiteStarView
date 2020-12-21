@@ -91,11 +91,9 @@ public class StarView:UIView, UIGestureRecognizerDelegate {
         }
         // Update star with IBInspectable varables
         updateStar()
-        // add gestureRecognizer if UserInteraction Is Enabled
-        if isUserInteractionEnabled {
-            self.addGestureRecognizer(panGesture)
-            self.addGestureRecognizer(tapGesture)
-        }
+        // add gestureRecognizer
+        self.addGestureRecognizer(panGesture)
+        self.addGestureRecognizer(tapGesture)
     }
     
     // MARK: drawStar
