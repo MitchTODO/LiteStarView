@@ -102,7 +102,7 @@ Pod::Spec.new do |spec|
 
   #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
-    spec.source_file = "LiteStarView/**/*.swift"
+    spec.source_files = "LiteStarView/**/*.swift"
   # spec.public_header_files = "Classes/**/*.h"
 
 
