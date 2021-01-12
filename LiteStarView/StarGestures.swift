@@ -22,7 +22,7 @@ extension StarView {
         // Use tap location divide by view height (view height = star width) new star rating
         var fraction = Float(location / bounds.height)
         if fraction.isLess(than: 0.0) {return} // cant have a rating less then zero
-        if fraction > starCount {return} // check if greater then amount of stars
+        if Int(fraction) > starCount {return} // check if greater then amount of stars
         
         if Int(fraction) != Int(rating){
             hapticFeedback.impactOccurred()//commit out if hapticFeedback is not desired
