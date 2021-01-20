@@ -63,7 +63,10 @@ Git clone the repo and add LiteStarView framework to your exsiting xcode project
 
 ### CocoaPods
 
-Currently not on CocoaPods 
+You want to add the following in your Podfile.
+
+`'LiteStarView', '~> 1.0'`
+
 
 # 📋 Setup
 
